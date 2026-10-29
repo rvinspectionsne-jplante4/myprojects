@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% load static %}
+
+<!DOCTYPE html>
+{% block title %}
+{% endblock %}
+
+{% block content %}
+    <body>
+
+    <h3 class="page-top">Class C Motor Homes</h3>
+    <figure class="text-center" class="page-pic-figure">
+        <img src="{% static 'rvsite/Class-C.png' %}" alt="Class C Motor Home"
+             title="Class C Motor Home" width=360" height="200>">
+    </figure>
+
+    <hr class="mt-4 mb-4 purple-line">
+
+    <div class="text-center">
+        <p class="class-c-text">
+            🔵 Class C motor homes typically have the same amenities as the
+            larger Class As, but are easier to maneuver and at a lower cost.
+        </p>
+    </div>
+
+    <hr class="mt-4 mb-4">
+
+    <div class="text-center">
+        <p class="class-c-text">
+            🔵 Class C motor homes are easily distinguished from Class B+
+            by having a bunk over the cab.
+        </p>
+    </div>
+
+    <hr class="mt-4 mb-4">
+
+    <div class="text-center">
+        <p class="class-c-text">
+            🔵 Class C coaches often have the same appliances and towing capacities
+            as larger coaches and are typically powered by gasoline engines
+            rather than diesels.
+        </p>
+    </div>
+    </body>
+{% endblock %}

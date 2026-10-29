@@ -1,0 +1,7 @@
+{% load static %}
+/* background image on home and training pages */
+body {
+    background-image: url(../rvsite/hohum4.jpg);
+    background-size: 100%;
+    object-fit: cover;
+}

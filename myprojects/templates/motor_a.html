@@ -1,0 +1,98 @@
+{% extends 'base.html' %}
+{% load static %}
+
+<!DOCTYPE html>
+{% block title %}
+{% endblock %}
+
+
+{% block content %}
+    <body>
+
+    <h3 class="page-top">Class A Motor Homes</h3>
+    <section class="mb-4">
+        <div class="carosel">
+            <div class="card">
+                <img src="{% static 'rvsite/class-a.jpg' %}"
+                     alt="card 1" width="300" height="250">
+            </div>
+            <div class="card"><img src="{% static 'rvsite/class-a-1.jpeg' %}"
+                                   alt="card 1" width="300" height="250">
+            </div>
+            <div class="card"><img src="{% static 'rvsite/class-a-2.jpeg' %}"
+                                   alt="card 1" width="300" height="250">
+            </div>
+            <div class="card"><img src="{% static 'rvsite/class-a-3.jpeg' %}"
+                                   alt="card 1" width="300" height="250">
+            </div>
+            <div class="card"><img src="{% static 'rvsite/class-a-4.jpeg' %}"
+                                   alt="card 1" width="300" height="250">
+            </div>
+            <div class="card"><img src="{% static 'rvsite/class-a-5.jpeg' %}"
+                                   alt="card 1" width="300" height="250">
+            </div>
+            <div class="card"><img src="{% static 'rvsite/class-a-6.jpeg' %}"
+                                   alt="card 1" width="300" height="250">
+            </div>
+        </div>
+    </section>
+    {% comment - save this code, It may be needed for mobile development%}
+    <figure class="text-center" class="page-pic-figure">
+        <img src="{% static 'rvsite/class-a.jpg' %}" alt="Class A Motor Home"
+             title="Class A Motor Home" width="640" height="320">
+    </figure>
+{% endcomment %}
+
+    <hr class="mt-4 mb-4 green-line">
+
+    <div class="text-center">
+        <p class="class-a-text">
+            Class A motor homes are for those who want a lot,
+            and don't mind paying a bit more $$$
+        </p>
+    </div>
+
+    <hr class="mt-4 mb-4">
+    <table class="table table-striped">
+        <thead style="font-size: clamp(0.5em, 1.5rem, 3rem)">
+        </thead>
+        <tbody>
+        <tr style="text-align: center; font-size: clamp(0.5em, 1.2rem, 3rem)">
+            <td>A lot of living room</td>
+            <td>Residential appliances</td>
+        </tr>
+        <tr style="text-align: center; font-size: clamp(0.5em, 1.2rem, 3rem)">
+            <td>Luxury appointments</td>
+            <td>Plenty of storage</td>
+        </tr>
+        <tr style="text-align: center; font-size: clamp(0.5em, 1.2rem, 3rem)">
+            <td>Washer/dryer</td>
+            <td>Dishwasher<br>Ice maker</td>
+        </tr>
+        <tr style="text-align: center; font-size: clamp(0.5em, 1.2rem, 3rem)">
+            <td>Entertainment systems</td>
+            <td>Towing capacity</td>
+        </tr>
+        <tr style="text-align: center; font-size: clamp(0.5em, 1.2rem, 3rem)">
+            <td>High-end furniture</td>
+            <td>King-size bed</td>
+        </tr>
+        <tr style="text-align: center; font-size: clamp(0.5em, 1.2rem, 3rem)">
+            <td>Hill climbing power</td>
+            <td>Solar battery charging</td>
+        </tr>
+        <tr style="text-align: center; font-size: clamp(0.5em, 1.2rem, 3rem)">
+            <td>High capacity generator</td>
+            <td>Extended battery life</td>
+        </tr>
+        </tbody>
+    </table>
+    <hr class="mt-4 mb-4">
+
+    <div class="text-center">
+        <h2 class="class-a-bottom-text">
+            $$$ And much, much more $$$
+        </h2>
+    </div>
+    </body>
+{% endblock %}
