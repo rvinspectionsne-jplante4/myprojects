@@ -1,0 +1,76 @@
+{% extends 'base.html' %}
+{% load static %}
+
+<!DOCTYPE html>
+{% block title %}
+
+{% endblock %}
+
+{% block content %}
+    <body>
+
+    <h3 class="page-top">Travel Trailers</h3>
+       <div class="carosel">
+       <div class="card">
+           <img src="{% static 'rvsite/airstream-tt.jpeg'%}"
+            alt="card 1" title="Airstream" width="300" height="250">
+       </div>
+       <div class="card"><img src="{% static 'rvsite/small-tt.jpeg' %}"
+            alt="card 1" title="Scamp" width="300" height="250">
+       </div>
+       <div class="card"><img src="{% static 'rvsite/fr-salem-tt.jpg' %}"
+             alt="card 1" title="Starter" width="300" height="250">
+       </div>
+       <div class="card"><img src="{% static 'rvsite/vintage-tt.jpg' %}"
+            alt="card 1" title="Vintage" width="300" height="250">
+       </div>
+       <div class="card"><img src="{% static 'rvsite/brinkley-ttl.webp' %}"
+            alt="card 1" title="Brinkley" width="300" height="250">
+       </div>
+       <div class="card"><img src="{% static 'rvsite/terra-tt.jpg' %}"
+            alt="card 1" title="Off-Road" width="300" height="250">
+       </div>
+       <div class="card"><img src="{% static 'rvsite/baby-tt.jpeg' %}"
+            alt="card 1" title="Baby" width="300" height="250">
+       </div>
+    </div>
+    </section>
+{% comment %}
+    <figure class="text-center" class="page-2-pic-figure">
+        <img src="{% static 'rvsite/airstream.jpeg' %}" alt="Airstream"
+             title="Airstream" width=420" height="240>">
+        <img src="{% static 'rvsite/brinkley_bumper_pull.webp' %}" alt="Brinkley"
+             title="Brinkley" width="420" height="240">
+    </figure>
+{% endcomment %}
+
+    <hr class="mt-4 mb-4 red-line">
+
+    <div class="text-center">
+        <p class="bumper-pull-text">
+            🔶 Travel trailers (also known as bumper-pulls) are, for many
+            campers, their first rig.<br> Ranging in size from 15 to 40 feet,
+            the only limit is how big your tow vehicle is.
+        </p>
+    </div>
+
+    <hr class="mt-4 mb-4">
+
+    <div class="text-center">
+        <p class="bumper-pull-text">
+            🔶 Inspection of a travel trailer will include the basic items and
+            inspection of the running gear to ensure that the camper can be
+            safely towed.
+        </p>
+    </div>
+
+    <hr class="mt-4 mb-4">
+
+    <div class="text-center">
+        <p class="bumper-pull-text">
+            🔶 In addition, the trailer's gross vehicular weight and tongue weight
+            should be compared to the tow vehicle's capacity.
+        </p>
+    </div>
+    </body>
+{% endblock %}

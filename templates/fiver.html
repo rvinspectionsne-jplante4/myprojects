@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% load static %}
+
+<!DOCTYPE html>
+{% block title %}
+{% endblock %}
+
+{% block content %}
+    <body>
+
+    <h3 class="page-top">Fifth Wheel Trailers</h3>
+    <figure class="text-center" class="page-pic-figure">
+        <img src="{% static 'rvsite/brinkley_fiver.webp' %}" alt="Fifth Wheel"
+             title="Fifth Wheel" width="300" height="200>">
+    </figure>
+
+    <hr class="mt-4 mb-4 brown-line">
+
+    <div class="text-center">
+        <p class="fiver-text">
+            ✅ Fifth wheel trailers (also known as fivers) are a popular
+            upgrade from a travel trailer.<br>Sporting most of the systems
+            and amenities of the larger Class A motor home,<br>fivers are the popular
+            choice of full-time travelers.
+        </p>
+    </div>
+
+    <div class="text-center">
+        <p class="fiver-text">
+            ✅ The convenience of having the running gear (the tow vehicle)
+            separate from the house (the camper)<br>means you can have
+            regular vehicle maintenance performed without getting a hotel.
+        </p>
+    </div>
+    <div class="text-center">
+        <p class="fiver-text">
+            ✅ If you already have a one-ton duallie pickup, consider a fifth
+            wheel camper to fulfill your traveling dreams.
+        </p>
+    </div>
+    </body>
+{% endblock %}

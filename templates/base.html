@@ -1,0 +1,94 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+          crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/pages.css' %}">
+    <title></title>
+
+    <! right side for all pages - views passes in background color gradients >
+    <style title="text/css">
+        .main {
+            margin-top: 50px;
+            margin-left: auto;
+            padding: 10px 10px;
+            background: radial-gradient({{ gradient2 }}, {{ gradient1 }});
+            font-family: Roboto, sans-serif;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+<div class="container">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+        <a href="#" class="navbar-brand">Explore</a>
+        <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#toggleMobileMenu"
+                aria-controls="toggleMobileMenu"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="toggleMobileMenu">
+            <ul class="navbar-nav">
+                <li>
+                    <a class="nav-link" href="/home">Home</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="/motor_a">Class A Motor Homes</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="/motor_b">Class B/B+ Motor Homes</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="/motor_c">Class C Motor Homes</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="/bumper_pull">Travel Trailers</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="/fiver">Fifth Wheels</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="/training">Training</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="/about">About</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="/contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+
+<div id="content" class="main">
+    <div class="row justify-content-center">
+        <div class="col-10">
+            <h1 class="mt-2 main-title">RV Inspections of New England</h1>
+            <hr class="mt-0 mb-2 title-line">
+            {% block content %}
+            {% endblock %}
+        </div>
+    </div>
+</div>
+
+
+</body>
+
+</html>
